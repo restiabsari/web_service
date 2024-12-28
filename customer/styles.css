@@ -1,0 +1,170 @@
+/* Reset dan Gaya Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: #4CAF50;
+}
+
+header .btn-add, header .btn-back {
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+    font-weight: bold;
+}
+
+header .btn-add:hover, header .btn-back:hover {
+    background-color: #45a049;
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table thead tr {
+    background-color: #4CAF50;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+table th, table td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+table td:last-child {
+    display: flex;
+    gap: 10px;
+}
+
+/* Tombol Aksi */
+.btn {
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #fff;
+    transition: background 0.3s;
+}
+
+.btn-edit {
+    background-color: #2196F3;
+}
+
+.btn-edit:hover {
+    background-color: #1976D2;
+}
+
+.btn-delete {
+    background-color: #f44336;
+}
+
+.btn-delete:hover {
+    background-color: #e53935;
+}
+
+/* Form Tambah Pelanggan (add.php) */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    form input, form textarea, form button {
+        font-size: 0.9rem;
+    }
+}
